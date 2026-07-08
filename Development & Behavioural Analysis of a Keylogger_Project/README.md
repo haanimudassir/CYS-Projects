@@ -1,4 +1,4 @@
-# FMA Project: Behavioural Analysis of a Keylogger
+# Fundamentals of Malware Analysis Project: Behavioural Analysis of a Keylogger
 
 ## Project Overview
 
@@ -14,13 +14,13 @@ This project implements a Windows keylogger for **educational analysis purposes*
 
 ## Key Techniques Implemented
 
-### ✅ Malware Payload
+### Malware Payload
 - `SetWindowsHookEx(WH_KEYBOARD_LL)` — global low-level keyboard hook
 - `ToAsciiEx` — accurate virtual key code to character conversion
 - `GetForegroundWindow` — context-aware window title logging
 - Timestamped log entries with active window tracking
 
-### ✅ Evasion Techniques
+### Evasion Techniques
 - **Anti-debugging**: `IsDebuggerPresent()`, PEB `BeingDebugged` flag check
 - **Sandbox detection**: Screen resolution, RAM size, uptime checks
 - **Process blacklist**: Scans for `procmon`, `wireshark`, `ida`, `x64dbg`, etc.
@@ -30,12 +30,12 @@ This project implements a Windows keylogger for **educational analysis purposes*
 - **Hidden installation**: Files stored in `%APPDATA%\Microsoft\Windows\TaskBars\`
 - **Process masquerading**: Binary named `sihost.exe` (mimics legitimate Windows process)
 
-### ✅ Persistence (Triple Redundancy)
+### Persistence (Triple Redundancy)
 1. **Registry Run Key**: `HKCU\...\Run` → "WindowsUpdateHelper"
 2. **Startup Folder**: `%APPDATA%\...\Startup\WindowsExplorer.lnk`
 3. **Scheduled Task**: "MicrosoftEdgeUpdate" — runs at user logon
 
-### ✅ Propagation
+### Propagation
 - USB drive monitoring thread (3-second polling interval)
 - Copies payload + DLL to removable drives
 - Creates `autorun.inf` for auto-execution
