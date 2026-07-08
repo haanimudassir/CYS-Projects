@@ -1,0 +1,76 @@
+==============================================================
+FMA PROJECT - BEHAVIOURAL ANALYSIS WORKSHEET
+Keylogger Behavioural Analysis
+==============================================================
+
+1. FILE SYSTEM ACTIVITY
+   - Files created/modified:
+   - File paths used:
+   - Hidden files detected (Y/N):
+   - Attributes set on files:
+
+2. REGISTRY ACTIVITY
+   - Keys created/modified:
+   - Values written:
+   - Persistence mechanisms detected:
+
+3. PROCESS / THREAD ACTIVITY
+   - Process name:
+   - Parent process:
+   - DLLs loaded:
+   - Threads created:
+   - CPU / memory usage:
+
+4. NETWORK ACTIVITY
+   - Connections made:
+   - DNS queries:
+   - Data exfiltrated (Y/N):
+   - Protocols used:
+
+5. API CALLS (via API Monitor)
+   - Keyboard hooks:
+   - File operations:
+   - Registry operations:
+   - Process operations:
+
+6. WINDOWS / UI ACTIVITY
+   - Window enumeration:
+   - Message hooks installed:
+
+7. EVASION TECHNIQUES DETECTED
+   - Anti-debugging:
+   - Sandbox detection:
+   - String obfuscation:
+   - Process masquerading:
+   - Timing delays:
+   - Other:
+
+8. PERSISTENCE MECHANISMS
+   - Registry Run Key:
+   - Startup Folder:
+   - Scheduled Task:
+   - Service:
+
+9. PROPAGATION
+   - USB autorun.inf:
+   - File copy mechanism:
+
+10. DETECTION
+    - VirusTotal detection rate:
+    - YARA rules triggered:
+    - AV signatures:
+
+11. IOCS (Indicators of Compromise)
+    - File hashes (MD5/SHA256):
+    - Registry paths:
+    - Network indicators:
+    - Process names:
+
+12. MITRE ATT&CK MAPPING
+    - T1056.001 - Input Capture:
+    - T1547.001 - Boot/Logon Autostart:
+    - T1091 - Replication via Removable Media:
+    - T1564 - Hide Artifacts:
+    - T1055 - Process Injection (DLL):
+
+==============================================================
