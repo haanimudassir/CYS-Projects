@@ -11,7 +11,9 @@ source code, or raw HTTP requests and returns a structured OWASP-aligned
 security report, including a downloadable, shareable HTML report for URL
 scans.
 
-🔗 **Live demo:** [securelab.vercel.app](https://securelab.vercel.app)
+## 🌐 Live Demo
+
+**SecureLab:** https://securelab.vercel.app 
 
 ## ✨ Features
 
@@ -57,7 +59,7 @@ Requires [Node.js](https://nodejs.org) 18 or later.
 
 ```bash
 git clone https://github.com/haanimudassir/CYS-Projects.git
-cd <your-repo>
+cd CYS-Projects/SecureLab
 ```
 
 **2. Install dependencies**
