@@ -1,0 +1,67 @@
+name: IRLMS CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Incident Response Log Management System (IRLMS)/**'
+      - '.github/workflows/irlms-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'Incident Response Log Management System (IRLMS)/**'
+      - '.github/workflows/irlms-ci.yml'
+
+jobs:
+  backend:
+    name: IRLMS Backend — test & audit
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "Incident Response Log Management System (IRLMS)/backend"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: "Incident Response Log Management System (IRLMS)/backend/package-lock.json"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run test suite
+        run: npm test
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+  frontend:
+    name: IRLMS Frontend — lint, build & audit
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "Incident Response Log Management System (IRLMS)/frontend"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: "Incident Response Log Management System (IRLMS)/frontend/package-lock.json"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npx oxlint src
+
+      - name: Build
+        run: npx vite build
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+        continue-on-error: true
