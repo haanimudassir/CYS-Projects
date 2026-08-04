@@ -4,7 +4,7 @@ A full-stack, database-driven platform for centralizing, tracking, and analyzing
 
 > Reporting → Triage → Response → Resolution → Audit, all in one auditable system of record.
 
-This project runs entirely locally against your own MySQL instance, there's no hosted demo. See **[Getting started](#getting-started)** below to run it in a few minutes.
+This project runs entirely locally against your own MySQL instance. See **[Getting started](#getting-started)** below to run it in a few minutes.
 
 
 ## Why this exists
@@ -47,7 +47,7 @@ irlms/
 - Route-level code splitting (`React.lazy`) — the initial bundle only ships the login page; every authenticated page, including the chart-heavy Dashboard, loads on demand.
 
 **CI**
-- GitHub Actions [[![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)] runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both.
+- GitHub Actions ( [![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml) ) runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both.
 
 
 ## Tech stack
