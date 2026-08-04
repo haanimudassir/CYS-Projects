@@ -1,7 +1,6 @@
 # IRLMS — Incident Response Log Management System
 
 [![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A full-stack, database-driven platform for centralizing, tracking, and analyzing security incidents across an organization's assets and personnel — a database systems project demonstrating normalized schema design, transactional integrity, and role-based application architecture end to end, from the SQL up through a production-style UI.
 
@@ -9,7 +8,6 @@ A full-stack, database-driven platform for centralizing, tracking, and analyzing
 
 This project runs entirely locally against your own MySQL instance, there's no hosted demo. See **[Getting started](#getting-started)** below to run it in a few minutes.
 
----
 
 ## Why this exists
 
