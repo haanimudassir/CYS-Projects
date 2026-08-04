@@ -47,7 +47,7 @@ irlms/
 - Route-level code splitting (`React.lazy`) — the initial bundle only ships the login page; every authenticated page, including the chart-heavy Dashboard, loads on demand.
 
 **CI**
-- GitHub Actions runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both. See [![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)
+- GitHub Actions [[![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)] runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both.
 
 
 ## Tech stack
