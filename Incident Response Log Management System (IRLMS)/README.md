@@ -1,6 +1,4 @@
-# IRLMS — Incident Response Log Management System
-
-[![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)
+# Incident Response Log Management System (IRLMS)
 
 A full-stack, database-driven platform for centralizing, tracking, and analyzing security incidents across an organization's assets and personnel — a database systems project demonstrating normalized schema design, transactional integrity, and role-based application architecture end to end, from the SQL up through a production-style UI.
 
@@ -49,7 +47,8 @@ irlms/
 - Route-level code splitting (`React.lazy`) — the initial bundle only ships the login page; every authenticated page, including the chart-heavy Dashboard, loads on demand.
 
 **CI**
-- GitHub Actions runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both. See [`.github/workflows/irlms-ci.yml`](../.github/workflows/irlms-ci.yml).
+- GitHub Actions runs on every push/PR touching this project: backend test suite, frontend lint (`oxlint`) and production build, and `npm audit` on both. See [![CI](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml/badge.svg)](https://github.com/haanimudassir/CYS-Projects/actions/workflows/irlms-ci.yml)
+
 
 ## Tech stack
 
@@ -63,7 +62,7 @@ irlms/
 
 ## Getting started
 
-Requires Node.js 18+ and a local MySQL 8 server. All commands below assume you're inside the `Incident Response Log Management System (IRLMS)/` folder (`cd "Incident Response Log Management System (IRLMS)"` first if you've just cloned the full `CYS-Projects` repo — the quotes matter here because of the spaces in the folder name).
+Requires Node.js 18+ and a local MySQL 8 server.
 
 ### 1. Database
 ```bash
