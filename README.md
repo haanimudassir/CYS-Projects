@@ -9,12 +9,5 @@ A collection of cybersecurity projects covering malware analysis, digital forens
 ### Malware Analysis & Behavioural Analysis
 - Development & Behavioural Analysis of a Keylogger Project
 
-### Digital Forensics & Incident Response
-- Plagiarism Detection System
-- Incident Response Log Management System
-
 ### Secure Software Development
-- Secure Web Application using OWASP Framework
-
-### Network Security
-- Reliable Version of User Datagram Protocol
+- SecureLab (Interactive Web Application Security Lab)
